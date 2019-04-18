@@ -12,10 +12,12 @@ class Song
     @@genres << genre
   end
   
-
-  
   def self.count
     @@count
   end
+  
+  def self.genres
+    genre_list = []
+    @@genres.each {|x| genre_list ||=
   
 end
