@@ -20,4 +20,5 @@ class Song
     genre_list = []
     @@genres.each {|x| genre_list.include?(x) ? genre_list : genre_list << genre}
     genre_list
+  end
 end
