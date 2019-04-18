@@ -25,7 +25,9 @@ class Song
   end
 
   def self.artists
-    
+    artist_list = []
+    @@artists.each {|x| artist_list.include?(x) ? artist_list : artist_list << artist}
+    artist_list
   end
 
 end
