@@ -38,5 +38,13 @@ class Song
     g_count
   end
 
+  def self.artist_count
+    a_count = {}
+    @@artists.each {|x|
+      a_count[x] ||= 0
+      a_count[x] += 1}
+    a_count
+  end
+
 end
 
