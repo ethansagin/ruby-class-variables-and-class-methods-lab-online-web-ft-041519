@@ -30,5 +30,14 @@ class Song
     artist_list
   end
 
+  def self.genre_count
+    g_count = {}
+    @@genres.each {|x|
+      g_count[x] ||= 0
+      g_count[x] += 1
+    end
+    g_count
+  end
+
 end
 
