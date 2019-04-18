@@ -34,8 +34,7 @@ class Song
     g_count = {}
     @@genres.each {|x|
       g_count[x] ||= 0
-      g_count[x] += 1
-    end
+      g_count[x] += 1}
     g_count
   end
 
