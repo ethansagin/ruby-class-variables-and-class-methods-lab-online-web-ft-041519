@@ -20,13 +20,13 @@ class Song
   
   def self.genres
     genre_list = []
-    @@genres.each {|x| genre_list.include?(x) ? genre_list : genre_list << genre}
+    @@genres.each {|x| genre_list.include?(x) ? genre_list : genre_list << x}
     genre_list
   end
 
   def self.artists
     artist_list = []
-    @@artists.each {|x| artist_list.include?(x) ? artist_list : artist_list << artist}
+    @@artists.each {|x| artist_list.include?(x) ? artist_list : artist_list << x}
     artist_list
   end
 
